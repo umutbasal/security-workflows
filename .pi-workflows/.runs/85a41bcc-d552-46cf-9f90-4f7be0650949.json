@@ -1,0 +1,681 @@
+{
+  "runId": "85a41bcc-d552-46cf-9f90-4f7be0650949",
+  "workflow": "http-discovery",
+  "status": "completed",
+  "args": "my-targets",
+  "createdAt": 1779051584297,
+  "updatedAt": 1779051649412,
+  "steps": [
+    {
+      "name": "naabu-scan",
+      "phase": "Scan",
+      "status": "completed",
+      "startedAt": 1779051584299,
+      "completedAt": 1779051610601,
+      "result": [
+        "amazon.com:443",
+        "amazon.com:80",
+        "facebook.com:443",
+        "facebook.com:80",
+        "flickr.com:443",
+        "flickr.com:80",
+        "google.com:443",
+        "google.com:80",
+        "hulu.com:443",
+        "hulu.com:80",
+        "instagram.com:443",
+        "instagram.com:80",
+        "linkedin.com:443",
+        "linkedin.com:80",
+        "netflix.com:443",
+        "netflix.com:80",
+        "pinterest.com:443",
+        "pinterest.com:80",
+        "reddit.com:443",
+        "reddit.com:80",
+        "reddit.com:8443",
+        "soundcloud.com:443",
+        "soundcloud.com:80",
+        "spotify.com:443",
+        "spotify.com:80",
+        "tumblr.com:443",
+        "tumblr.com:80",
+        "twitter.com:443",
+        "twitter.com:80",
+        "twitter.com:8080",
+        "twitter.com:8443",
+        "vimeo.com:443",
+        "vimeo.com:80",
+        "vimeo.com:8080",
+        "vimeo.com:8443",
+        "youtube.com:443",
+        "youtube.com:80"
+      ]
+    },
+    {
+      "name": "httpx-probe",
+      "phase": "Probe",
+      "status": "completed",
+      "startedAt": 1779051610601,
+      "completedAt": 1779051649412,
+      "result": [
+        {
+          "url": "http://amazon.com",
+          "status_code": 301,
+          "title": "301 Moved Permanently",
+          "technologies": []
+        },
+        {
+          "url": "http://facebook.com",
+          "status_code": 303,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "http://flickr.com",
+          "status_code": 301,
+          "title": "301 Moved Permanently",
+          "technologies": [
+            "Amazon Cloudfront",
+            "Amazon Web Services"
+          ]
+        },
+        {
+          "url": "http://google.com",
+          "status_code": 301,
+          "title": "301 Moved",
+          "technologies": [
+            "Google Web Server"
+          ]
+        },
+        {
+          "url": "http://hulu.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "http://instagram.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "http://linkedin.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HTTP/3"
+          ]
+        },
+        {
+          "url": "http://netflix.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HSTS"
+          ]
+        },
+        {
+          "url": "http://pinterest.com",
+          "status_code": 308,
+          "title": "Permanent Redirect",
+          "technologies": []
+        },
+        {
+          "url": "http://reddit.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Varnish"
+          ]
+        },
+        {
+          "url": "http://soundcloud.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Amazon Cloudfront",
+            "Amazon Web Services"
+          ]
+        },
+        {
+          "url": "http://spotify.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Envoy",
+            "Google Cloud",
+            "Google Cloud CDN"
+          ]
+        },
+        {
+          "url": "http://tumblr.com",
+          "status_code": 301,
+          "title": "301 Moved Permanently",
+          "technologies": [
+            "Nginx"
+          ]
+        },
+        {
+          "url": "http://twitter.com",
+          "status_code": 520,
+          "title": "",
+          "technologies": [
+            "Cloudflare"
+          ]
+        },
+        {
+          "url": "http://twitter.com:8080",
+          "status_code": 520,
+          "title": "",
+          "technologies": [
+            "Cloudflare"
+          ]
+        },
+        {
+          "url": "http://vimeo.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Cloudflare",
+            "Cloudflare Bot Management",
+            "HTTP/3",
+            "Varnish"
+          ]
+        },
+        {
+          "url": "http://vimeo.com:8443",
+          "status_code": 400,
+          "title": "400 The plain HTTP request was sent to HTTPS port",
+          "technologies": [
+            "Cloudflare"
+          ]
+        },
+        {
+          "url": "http://youtube.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "https://amazon.com",
+          "status_code": 301,
+          "title": "301 Moved Permanently",
+          "technologies": []
+        },
+        {
+          "url": "https://facebook.com",
+          "status_code": 303,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "https://flickr.com",
+          "status_code": 200,
+          "title": "Flickr | The best place to be a photographer online.",
+          "technologies": [
+            "Amazon Cloudfront",
+            "Amazon Web Services",
+            "Google Tag Manager"
+          ]
+        },
+        {
+          "url": "https://google.com",
+          "status_code": 301,
+          "title": "301 Moved",
+          "technologies": [
+            "Google Web Server",
+            "HTTP/3"
+          ]
+        },
+        {
+          "url": "https://hulu.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": []
+        },
+        {
+          "url": "https://instagram.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HSTS",
+            "HTTP/3"
+          ]
+        },
+        {
+          "url": "https://linkedin.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HTTP/3"
+          ]
+        },
+        {
+          "url": "https://netflix.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Envoy",
+            "HSTS",
+            "Zipkin"
+          ]
+        },
+        {
+          "url": "https://pinterest.com",
+          "status_code": 308,
+          "title": "Permanent Redirect",
+          "technologies": [
+            "HSTS"
+          ]
+        },
+        {
+          "url": "https://reddit.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HSTS",
+            "Varnish"
+          ]
+        },
+        {
+          "url": "https://soundcloud.com",
+          "status_code": 200,
+          "title": "Stream and listen to music online for free with SoundCloud",
+          "technologies": [
+            "Amazon Cloudfront",
+            "Amazon Web Services",
+            "HSTS"
+          ]
+        },
+        {
+          "url": "https://spotify.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Envoy",
+            "HSTS",
+            "HTTP/3"
+          ]
+        },
+        {
+          "url": "https://tumblr.com",
+          "status_code": 301,
+          "title": "301 Moved Permanently",
+          "technologies": [
+            "HSTS",
+            "Nginx"
+          ]
+        },
+        {
+          "url": "https://twitter.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Amazon S3",
+            "Amazon Web Services",
+            "Cloudflare",
+            "Cloudflare Bot Management",
+            "Express",
+            "HSTS",
+            "Node.js",
+            "Plaid"
+          ]
+        },
+        {
+          "url": "https://twitter.com:8443",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "Amazon S3",
+            "Amazon Web Services",
+            "Cloudflare",
+            "Cloudflare Bot Management",
+            "Express",
+            "HSTS",
+            "Node.js",
+            "Plaid"
+          ]
+        },
+        {
+          "url": "https://vimeo.com",
+          "status_code": 200,
+          "title": "Vimeo - All-in-One Video Platform",
+          "technologies": [
+            "Cloudflare",
+            "Cloudflare Bot Management",
+            "HSTS",
+            "HTTP/3",
+            "Next.js",
+            "Node.js",
+            "React",
+            "Varnish",
+            "Webpack"
+          ]
+        },
+        {
+          "url": "https://youtube.com",
+          "status_code": 301,
+          "title": "",
+          "technologies": [
+            "HSTS",
+            "HTTP/3"
+          ]
+        }
+      ]
+    }
+  ],
+  "result": {
+    "target_file": "list.txt",
+    "ports_scanned": "80,443,8080,8443,8000,8888,3000,5000,9090,8081,8082,8443,4443,2443",
+    "open_ports_found": 37,
+    "live_urls": 35,
+    "results": [
+      {
+        "url": "http://amazon.com",
+        "status_code": 301,
+        "title": "301 Moved Permanently",
+        "technologies": []
+      },
+      {
+        "url": "http://facebook.com",
+        "status_code": 303,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "http://flickr.com",
+        "status_code": 301,
+        "title": "301 Moved Permanently",
+        "technologies": [
+          "Amazon Cloudfront",
+          "Amazon Web Services"
+        ]
+      },
+      {
+        "url": "http://google.com",
+        "status_code": 301,
+        "title": "301 Moved",
+        "technologies": [
+          "Google Web Server"
+        ]
+      },
+      {
+        "url": "http://hulu.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "http://instagram.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "http://linkedin.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HTTP/3"
+        ]
+      },
+      {
+        "url": "http://netflix.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HSTS"
+        ]
+      },
+      {
+        "url": "http://pinterest.com",
+        "status_code": 308,
+        "title": "Permanent Redirect",
+        "technologies": []
+      },
+      {
+        "url": "http://reddit.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Varnish"
+        ]
+      },
+      {
+        "url": "http://soundcloud.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Amazon Cloudfront",
+          "Amazon Web Services"
+        ]
+      },
+      {
+        "url": "http://spotify.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Envoy",
+          "Google Cloud",
+          "Google Cloud CDN"
+        ]
+      },
+      {
+        "url": "http://tumblr.com",
+        "status_code": 301,
+        "title": "301 Moved Permanently",
+        "technologies": [
+          "Nginx"
+        ]
+      },
+      {
+        "url": "http://twitter.com",
+        "status_code": 520,
+        "title": "",
+        "technologies": [
+          "Cloudflare"
+        ]
+      },
+      {
+        "url": "http://twitter.com:8080",
+        "status_code": 520,
+        "title": "",
+        "technologies": [
+          "Cloudflare"
+        ]
+      },
+      {
+        "url": "http://vimeo.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Cloudflare",
+          "Cloudflare Bot Management",
+          "HTTP/3",
+          "Varnish"
+        ]
+      },
+      {
+        "url": "http://vimeo.com:8443",
+        "status_code": 400,
+        "title": "400 The plain HTTP request was sent to HTTPS port",
+        "technologies": [
+          "Cloudflare"
+        ]
+      },
+      {
+        "url": "http://youtube.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "https://amazon.com",
+        "status_code": 301,
+        "title": "301 Moved Permanently",
+        "technologies": []
+      },
+      {
+        "url": "https://facebook.com",
+        "status_code": 303,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "https://flickr.com",
+        "status_code": 200,
+        "title": "Flickr | The best place to be a photographer online.",
+        "technologies": [
+          "Amazon Cloudfront",
+          "Amazon Web Services",
+          "Google Tag Manager"
+        ]
+      },
+      {
+        "url": "https://google.com",
+        "status_code": 301,
+        "title": "301 Moved",
+        "technologies": [
+          "Google Web Server",
+          "HTTP/3"
+        ]
+      },
+      {
+        "url": "https://hulu.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": []
+      },
+      {
+        "url": "https://instagram.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HSTS",
+          "HTTP/3"
+        ]
+      },
+      {
+        "url": "https://linkedin.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HTTP/3"
+        ]
+      },
+      {
+        "url": "https://netflix.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Envoy",
+          "HSTS",
+          "Zipkin"
+        ]
+      },
+      {
+        "url": "https://pinterest.com",
+        "status_code": 308,
+        "title": "Permanent Redirect",
+        "technologies": [
+          "HSTS"
+        ]
+      },
+      {
+        "url": "https://reddit.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HSTS",
+          "Varnish"
+        ]
+      },
+      {
+        "url": "https://soundcloud.com",
+        "status_code": 200,
+        "title": "Stream and listen to music online for free with SoundCloud",
+        "technologies": [
+          "Amazon Cloudfront",
+          "Amazon Web Services",
+          "HSTS"
+        ]
+      },
+      {
+        "url": "https://spotify.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Envoy",
+          "HSTS",
+          "HTTP/3"
+        ]
+      },
+      {
+        "url": "https://tumblr.com",
+        "status_code": 301,
+        "title": "301 Moved Permanently",
+        "technologies": [
+          "HSTS",
+          "Nginx"
+        ]
+      },
+      {
+        "url": "https://twitter.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Amazon S3",
+          "Amazon Web Services",
+          "Cloudflare",
+          "Cloudflare Bot Management",
+          "Express",
+          "HSTS",
+          "Node.js",
+          "Plaid"
+        ]
+      },
+      {
+        "url": "https://twitter.com:8443",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "Amazon S3",
+          "Amazon Web Services",
+          "Cloudflare",
+          "Cloudflare Bot Management",
+          "Express",
+          "HSTS",
+          "Node.js",
+          "Plaid"
+        ]
+      },
+      {
+        "url": "https://vimeo.com",
+        "status_code": 200,
+        "title": "Vimeo - All-in-One Video Platform",
+        "technologies": [
+          "Cloudflare",
+          "Cloudflare Bot Management",
+          "HSTS",
+          "HTTP/3",
+          "Next.js",
+          "Node.js",
+          "React",
+          "Varnish",
+          "Webpack"
+        ]
+      },
+      {
+        "url": "https://youtube.com",
+        "status_code": 301,
+        "title": "",
+        "technologies": [
+          "HSTS",
+          "HTTP/3"
+        ]
+      }
+    ]
+  }
+}
