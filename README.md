@@ -2,7 +2,8 @@
 
 This repository shows reference usage of the [pi-workflows](https://github.com/umutbasal/pi-workflows) project.
 
-<img width="1227" height="975" alt="image" src="https://github.com/user-attachments/assets/0558feeb-abcb-41b8-96f4-6446bde99307" />
+<img width="1231" height="986" alt="image" src="https://github.com/user-attachments/assets/233f1cc8-dda1-4d98-98be-546bf9e8e534" />
+
 
 
 ## Vulnerability Discovery Harness Example
