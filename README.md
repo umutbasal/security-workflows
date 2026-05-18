@@ -19,4 +19,5 @@ Generated workflow output: [`.pi/workflows/vuln-discovery.js`](./.pi/workflows/v
 Enriched for project: [`.pi/workflows/vuln-discovery-enriched-simple-project.js`](./.pi/workflows/vuln-discovery-enriched-simple-project.js)
 
 Execution run info: [`.pi-workflows/.runs/0dbf32a7-9015-4436-a056-7b5cb639d7f0.json`](./.pi-workflows/.runs/0dbf32a7-9015-4436-a056-7b5cb639d7f0.json)
+
 And it generates a markdown report at the end useless to demonstrate. Normal pentest report from agents validated POCs that aggregated.
